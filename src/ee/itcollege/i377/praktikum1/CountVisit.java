@@ -33,8 +33,6 @@ public class CountVisit extends HttpServlet {
 			sess.setAttribute(SESSION_VISITS, visits);
 		}
 		
-//		response.setCharacterEncoding("UTF-8");
-		
 		PrintWriter out = response.getWriter();
 		Integer visits = (Integer) request.getSession().getAttribute(SESSION_VISITS);
 		out.append("Külastuste arv: " + visits);
